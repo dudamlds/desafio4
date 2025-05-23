@@ -1,29 +1,24 @@
-import './App.css';
+import "./styles/theme.css";
+import "./styles/global.css";
+import { MyText } from "./components/MyText";
 
-function App() {
+export default function App() {
+const text = [
+  { title: "Meu texto 1", text: "Meu texto 1" },
+  { title: "Meu texto 2", text: "Meu texto 2" },
+  { title: "Meu texto 3", text: "Meu texto 3" },
+  { title: "Meu texto 4", text: "Meu texto 4" },
+  { title: "Meu texto 5", text: "Meu texto 5" }
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.jsx</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
-    </div>
+    // React Fragment
+    <>{texts.map((text, index) => {
+      return (
+        <MyText key={index} title={'${text.title} ${index + 1}'}>
+          {text.text}
+        </MyText>
+      );
+    })}</>
   );
-}
-
-export default App;
+};
