@@ -51,35 +51,35 @@
 
 .header1 {
     grid-area: header1;
-    background-color:darkslateblue;
+    background-color:rgb(255, 17, 17);
 
 }
 
 .header2 {
     grid-area: header2;
-        background-color:rgb(105, 100, 143);
+        background-color:rgb(18, 133, 199);
 
 }
 
 .footer {
     grid-area: footer;
-    background-color:dimgray
+    background-color:rgb(1, 129, 18)
 }
 .footer2 {
     grid-area: footer2;
-    background-color:rgb(17, 209, 113);
+    background-color:rgb(214, 148, 198);
 }
 
 .aside {
     grid-area: aside;
-    background-color:darkslategray;
+    background-color:rgb(251, 255, 42);
     @media (min-width: 768px) {
         display: none;
     }
 }
 .aside2 {
     grid-area: aside2;
-    background-color:rgb(178, 187, 47);
+    background-color:rgb(251, 255, 42);
     @media (max-width: 1200px) {
         display: none;
     }
