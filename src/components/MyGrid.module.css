@@ -3,8 +3,8 @@
     grid-area: main;
     background: linear-gradient(
         to bottom,
-        rgba(15,21,33,255) 0%,
-        rgba(10,20,117,255) 100%
+        rgba(15,21,33,255) 100%,
+        rgba(10,20,117,255) 0%
     )
 }
 .grid {
