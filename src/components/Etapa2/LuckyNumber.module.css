@@ -1,26 +1,32 @@
 .container {
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  height: 100vh;
-  background-color: var(--primary);
-  font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 100vh;
+    background: linear-gradient(
+    to bottom,
+    rgba(15, 21, 33, 255) 0%,
+    rgba(10, 20, 117, 255) 100%
+  );
+    font-size: 3rem;
+    gap: 2rem;
+    padding: 3rem;
+    color: rgb(37, 100, 234);
 }
 
 .button {
+    background-color: rgba(15, 21, 33, 255);
     padding: 1rem 2rem;
-    border-radius: 0.5rem;
-    background-color: var(--primary-contrast-dark);
-    font-size: 2rem;
+    color: rgb(37, 100, 234);
+    border-color: rgb(37, 100, 234);
+    font-size: 1.5rem;
     cursor: pointer;
-    font-weight: bolder;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    
 }
 
 .button:hover {
-    background-color: var(--primary-dark);
-    color: var(--primary-light);
-    transform: scale(1.05);
+    background-color: rgba(35, 41, 53, 255);
+    transform: scale(1.05); 
 }

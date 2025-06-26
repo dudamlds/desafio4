@@ -7,7 +7,7 @@ export function MyTextList() {
     { title: "Meu titulo", text: "meu texto" },
     { title: "Meu titulo", text: "meu texto" },
     { title: "Meu titulo", text: "meu texto" },
-  ]; // array de objetos com texto e título
+  ]; 
 
   return (
     <>
@@ -21,6 +21,6 @@ export function MyTextList() {
           );
         })}
       </div>
-    </> // Abrimos {} para podermos programar em JS dentro do JSX
+    </> 
   );
 }

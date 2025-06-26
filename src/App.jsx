@@ -1,12 +1,14 @@
 import "./styles/theme.css";
 import "./styles/global.css";
-import { MyTextList } from "./components/MyTextList";
-import { MyGrid } from "./components/MyGrid";
+import { LuckyNumber } from "./components/Etapa2/LuckyNumber";
 
 export default function App() {
   return (
     <>
-      <MyGrid />
+      <div className="container">
+        <Header />
+        <LuckyNumber />
+      </div>
     </>
   );
 }
